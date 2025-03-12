@@ -1,9 +1,64 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Supabase Integration
+
+This application demonstrates a full-featured authentication and user management system built with Next.js 14 (App Router) and Supabase. It includes:
+
+### Features
+- 🔐 Email & Password Authentication
+- 📝 User Profile Management
+- 🖼️ Avatar Upload & Management
+- 🔄 Server-Side Session Handling
+- 🛡️ Protected Routes
+- 🔒 Secure API Routes
+
+### Authentication Flow
+- Sign Up: Users can create new accounts with email and password
+- Sign In: Existing users can log in securely
+- Sign Out: Users can end their sessions
+- Email Verification: New users receive verification emails
+- Password Reset: Users can reset forgotten passwords
+
+### User Profile Features
+- Profile Information: Users can view and edit their:
+  - Full Name
+  - Username
+  - Website
+  - Avatar
+- Real-time Updates: Profile changes are reflected immediately
+- Data Persistence: All user data is stored in Supabase
+
+### Technical Implementation
+- Server Components: Leverages Next.js 14 server components for optimal performance
+- Client Components: Uses React client components for interactive features
+- Middleware: Implements Supabase auth middleware for session management
+- Type Safety: Full TypeScript implementation
+- Environment Variables: Secure configuration management
+
+### Directory Structure
+```
+src/
+├── app/                    # Next.js app router
+│   ├── account/           # Protected account pages
+│   ├── auth/              # Authentication routes
+│   └── actions.ts         # Server actions
+├── utils/
+│   └── supabase/         # Supabase utility functions
+│       ├── client.ts     # Browser client
+│       ├── server.ts     # Server client
+│       └── middleware.ts # Auth middleware
+```
+
 ## Getting Started
 
-First, run the development server:
+1. Set up your Supabase project and get your credentials
+2. Create a `.env.local` file with:
+```env
+NEXT_PUBLIC_SUPABASE_URL=your-project-url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
+```
 
+3. Run the development server:
 ```bash
 npm run dev
 # or
