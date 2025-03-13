@@ -2,6 +2,8 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Supabase Integration
 
+#### Ran from :~/solidity/supabase/supabase-nextjs
+
 This application demonstrates a full-featured authentication and user management system built with Next.js 14 (App Router) and Supabase. It includes:
 
 ### Features
